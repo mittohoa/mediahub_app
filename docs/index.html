@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Media Hub — Quản lý ảnh thông minh</title>
+<meta name="description" content="Trình quản lý ảnh & video thông minh, ưu tiên xử lý trên thiết bị và quyền riêng tư. Tải APK bản thử nghiệm.">
+<style>
+  :root{
+    --indigo:#5b6cf0; --indigo2:#7b86f7; --ink:#1b1d28; --muted:#6b7080;
+    --bg:#f6f7fb; --card:#ffffff; --line:#e7e9f2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.55}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  /* Hero */
+  .hero{background:linear-gradient(135deg,#5b6cf0,#7b86f7);color:#fff;
+    padding:64px 0 72px;text-align:center}
+  .logo{width:84px;height:84px;border-radius:22px;background:rgba(255,255,255,.16);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:40px}
+  .hero h1{font-size:40px;font-weight:800;letter-spacing:-.5px}
+  .hero p{font-size:18px;opacity:.95;margin:12px auto 0;max-width:680px}
+  .badge{display:inline-block;margin-top:18px;padding:6px 14px;border-radius:999px;
+    background:rgba(255,255,255,.18);font-size:13px;font-weight:600}
+  .btns{margin-top:30px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 24px;border-radius:14px;
+    font-weight:700;font-size:16px;text-decoration:none;transition:transform .12s,box-shadow .12s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:#fff;color:var(--indigo);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+  .btn-ghost{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.4)}
+  .btn small{display:block;font-weight:500;font-size:12px;opacity:.7}
+  /* Sections */
+  section{padding:56px 0}
+  h2{font-size:28px;font-weight:800;text-align:center;margin-bottom:8px}
+  .sub{text-align:center;color:var(--muted);margin-bottom:34px}
+  /* Shots */
+  .shots{display:flex;gap:16px;overflow-x:auto;padding:6px 2px 16px;scroll-snap-type:x mandatory}
+  .shots img{height:520px;border-radius:22px;border:1px solid var(--line);
+    box-shadow:0 10px 30px rgba(20,24,60,.10);scroll-snap-align:center;background:#fff}
+  /* Features */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+  .card .ico{font-size:26px}
+  .card h3{font-size:17px;margin:10px 0 6px}
+  .card p{color:var(--muted);font-size:14px}
+  /* Install */
+  .steps{max-width:680px;margin:0 auto;background:var(--card);border:1px solid var(--line);
+    border-radius:18px;padding:10px 26px}
+  .steps li{margin:16px 0;padding-left:6px}
+  .note{max-width:760px;margin:26px auto 0;text-align:center;color:var(--muted);font-size:14px}
+  footer{padding:40px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+  .alt{background:#eef0fb}
+  code{background:#eceefb;padding:2px 7px;border-radius:6px;font-size:13px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="logo">🖼️✨</div>
+    <h1>AI Media Hub</h1>
+    <p>Trình quản lý ảnh &amp; video thông minh — ưu tiên xử lý trên thiết bị và quyền riêng tư.</p>
+    <div class="badge">⚠️ Bản thử nghiệm (beta) — chưa lên Google Play</div>
+    <div class="btns">
+      <a class="btn btn-primary" href="https://github.com/mittohoa/mediahub_app/releases/download/v0.1.0-beta/aimediahub-0.1.0-beta-arm64-v8a.apk">
+        ⬇️ Tải APK <small>arm64-v8a · đa số máy (~77MB)</small>
+      </a>
+      <a class="btn btn-ghost" href="https://github.com/mittohoa/mediahub_app/releases/download/v0.1.0-beta/aimediahub-0.1.0-beta-armeabi-v7a.apk">
+        ⬇️ Máy 32-bit cũ <small>armeabi-v7a (~62MB)</small>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Giao diện</h2>
+    <p class="sub">Onboarding · Trang chủ · Thư viện · Cài đặt · Ảnh đại diện</p>
+    <div class="shots">
+      <img src="screenshots/01_onboarding.png" alt="Onboarding" loading="lazy">
+      <img src="screenshots/02_onboarding_privacy.png" alt="Quyền riêng tư" loading="lazy">
+      <img src="screenshots/03_home.png" alt="Trang chủ" loading="lazy">
+      <img src="screenshots/05_library.png" alt="Thư viện" loading="lazy">
+      <img src="screenshots/10_avatar_applied.png" alt="Avatar" loading="lazy">
+      <img src="screenshots/04_settings.png" alt="Cài đặt" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Tính năng nổi bật</h2>
+    <p class="sub">Phần lớn AI chạy ngay trên máy — ảnh của bạn không gửi lên máy chủ.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">📸</div><h3>Thư viện thông minh</h3><p>Timeline theo ngày &amp; địa điểm, layout mosaic, gom nhóm ảnh gần giống, chọn nhiều/thao tác hàng loạt.</p></div>
+      <div class="card"><div class="ico">🧠</div><h3>AI trên thiết bị</h3><p>Tự gắn thẻ, gợi ý thẻ, nhận diện &amp; gom nhóm khuôn mặt, OCR tìm theo chữ — offline.</p></div>
+      <div class="card"><div class="ico">🔎</div><h3>Tìm kiếm tự nhiên</h3><p>"Ảnh ở Đà Nẵng năm ngoái", "ảnh có người"… offline hoặc nâng cao bằng LLM.</p></div>
+      <div class="card"><div class="ico">🗺️</div><h3>Bản đồ &amp; Địa cầu 3D</h3><p>Xem ảnh theo nơi chụp; gắn vị trí thủ công cho ảnh thiếu GPS.</p></div>
+      <div class="card"><div class="ico">✨</div><h3>Kỷ niệm tự động</h3><p>Ngày này năm xưa, chuyến đi, recap, theo từng người.</p></div>
+      <div class="card"><div class="ico">🔒</div><h3>Bảo mật</h3><p>Khoá ứng dụng (sinh trắc học) + Kho mã hoá AES-256 ẩn ảnh riêng tư.</p></div>
+      <div class="card"><div class="ico">✂️</div><h3>Biên tập</h3><p>Chỉnh sửa ảnh, sửa nhanh bằng preset, cắt video — giữ chất lượng gốc.</p></div>
+      <div class="card"><div class="ico">☁️</div><h3>Cloud tuỳ chọn</h3><p>Google Drive (duyệt/nhập/sao lưu) và nhập từ Google Photos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cài đặt APK</h2>
+    <p class="sub">Bản thử nghiệm cài trực tiếp (sideload), chưa qua Google Play.</p>
+    <ol class="steps">
+      <li>Tải file <strong>APK</strong> ở nút phía trên (chọn <code>arm64-v8a</code> cho máy đời mới).</li>
+      <li>Mở file vừa tải; Android sẽ hỏi cho phép <strong>cài từ nguồn không xác định</strong> → bật cho trình duyệt/trình quản lý file.</li>
+      <li>Nhấn <strong>Cài đặt</strong> → mở app → cấp quyền Ảnh khi được hỏi.</li>
+    </ol>
+    <p class="note">Yêu cầu Android 6.0+ (minSdk 23). Đây là bản beta ký bằng khoá thử nghiệm — Android có thể cảnh báo;
+    đây là điều bình thường với app cài ngoài Store. Ảnh, thẻ, khuôn mặt, vị trí đều lưu <strong>cục bộ</strong> trên máy bạn.</p>
+  </div>
+</section>
+
+<footer>
+  AI Media Hub · bản thử nghiệm v0.1.0-beta · Flutter<br>
+  Phản hồi lỗi/góp ý qua mục Issues của repo. Sẽ lên Google Play sau giai đoạn thử nghiệm.
+</footer>
+
+</body>
+</html>

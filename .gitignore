@@ -1,0 +1,3 @@
+# APK binaries are distributed via GitHub Releases, not committed.
+_apk/
+*.apk
