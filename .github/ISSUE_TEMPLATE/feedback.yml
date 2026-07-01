@@ -1,0 +1,34 @@
+name: "💡 Góp ý / Đề xuất (Feedback)"
+description: "Góp ý trải nghiệm hoặc đề xuất tính năng / Share feedback or suggest a feature"
+title: "[Feedback] "
+labels: ["feedback", "beta"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Loại góp ý / Category"
+      options:
+        - "Trải nghiệm/giao diện (UX/UI)"
+        - "Đề xuất tính năng mới (Feature request)"
+        - "Hiệu năng/độ mượt (Performance)"
+        - "Khác (Other)"
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: "Nội dung / Details"
+      description: "Bạn thích/không thích gì, hoặc muốn thêm gì? / What do you like/dislike, or want added?"
+    validations:
+      required: true
+  - type: dropdown
+    id: rating
+    attributes:
+      label: "Cảm nhận chung / Overall impression"
+      options:
+        - "😍 Rất thích"
+        - "🙂 Ổn"
+        - "😐 Bình thường"
+        - "🙁 Cần cải thiện nhiều"
+    validations:
+      required: false

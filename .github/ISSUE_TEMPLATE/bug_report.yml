@@ -1,0 +1,50 @@
+name: "🐞 Báo lỗi (Bug report)"
+description: "Báo một lỗi gặp phải khi dùng bản beta / Report a bug in the beta"
+title: "[Bug] "
+labels: ["bug", "beta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã thử nghiệm **AI Media Hub**! Điền càng chi tiết càng giúp sửa lỗi nhanh.
+        _Thanks for testing! The more detail, the faster we can fix it._
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "Chuyện gì xảy ra? / What happened?"
+      description: "Mô tả lỗi và điều bạn mong đợi. / Describe the bug and what you expected."
+      placeholder: "Khi mở Thư viện thì app bị… / When I open Library, the app…"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Các bước tái hiện / Steps to reproduce"
+      placeholder: |
+        1. Mở…
+        2. Nhấn…
+        3. Lỗi xuất hiện
+    validations:
+      required: false
+  - type: input
+    id: app-version
+    attributes:
+      label: "Phiên bản app / App version"
+      description: "Xem ở Cài đặt → Giới thiệu, hoặc tên file APK. / See Settings → About, or the APK file name."
+      value: "v0.1.1-beta"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: "Thiết bị & Android / Device & Android version"
+      placeholder: "VD: Samsung A54, Android 14"
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Ảnh/màn hình lỗi (kéo-thả) / Screenshots (drag & drop)"
+      description: "Kéo ảnh vào đây nếu có. / Drop images here if any."
+    validations:
+      required: false
